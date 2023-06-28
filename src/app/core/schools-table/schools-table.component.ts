@@ -11,7 +11,12 @@ export class SchoolsTableComponent {
     headerRow: ['School Name', 'Grade'],
     dataRows: [
       ['School 1', 'A'],
-      ['School 2', 'B'],
+      ['School 2', 'B'],      
+      ['School 3', 'C'],
+      ['School 4', 'D'],
+      ['School 5', 'E'],
+      ['School 6', 'F'],
+      ['School 7', 'G'],
       // Add more rows as needed
     ]
   };
