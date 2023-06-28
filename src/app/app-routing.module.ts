@@ -6,8 +6,7 @@ import { SchoolsPageComponent } from './views/schools-page/schools-page.componen
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
-  { path: 'schools', component: SchoolsPageComponent},
-
+  { path: 'schools', component: SchoolsPageComponent },
 ];
 
 @NgModule({

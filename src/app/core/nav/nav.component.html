@@ -1,6 +1,19 @@
-<mat-tab-group>
-    <mat-tab label="Home" routerLink="/home"></mat-tab>
-    <mat-tab label="Schools" routerLink="/schools"></mat-tab>
-    <!-- add more tabs as needed -->
-  </mat-tab-group>
+<nav mat-tab-nav-bar class="mb-4">
+    <a
+      mat-tab-link
+      [routerLink]="['/home']"
+      routerLinkActive
+      #homeRla="routerLinkActive"
+      [active]="homeRla.isActive"
+      >Home</a
+    >
+    <a
+      mat-tab-link
+      [routerLink]="['/schools']"
+      routerLinkActive
+      #schoolsRla="routerLinkActive"
+      [active]="schoolsRla.isActive"
+      >Schools</a
+    >
+  </nav>
   

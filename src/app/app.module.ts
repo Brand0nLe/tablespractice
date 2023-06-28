@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { RouterModule } from '@angular/router';
 
 // Import custom modules
 import { SharedModule } from './shared/shared.module';
@@ -21,6 +22,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    RouterModule, // Import RouterModule here
+
 
     //Custom modules
     SharedModule,
