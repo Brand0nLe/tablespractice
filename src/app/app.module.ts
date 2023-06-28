@@ -5,10 +5,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SchoolsPageComponent } from './views/schools-page/schools-page.component';
+import { HomePageComponent } from './views/home-page/home-page.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SchoolsPageComponent,
+    HomePageComponent
   ],
   imports: [
     AppRoutingModule,
