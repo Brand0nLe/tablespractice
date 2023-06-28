@@ -6,9 +6,31 @@
     "tablespractice": {
       "projectType": "application",
       "schematics": {
-        "@schematics/angular:component": {
-          "style": "scss"
-        }
+        "schematics": {
+          "@schematics/angular": {
+            "component": {
+              "style": "scss",
+              "skipTests": true
+            },
+            "class": {
+              "skipTests": true
+            },
+            "directive": {
+              "skipTests": true
+            },
+            "guard": {
+              "skipTests": true
+            },
+            "module": {
+              "skipTests": true
+            },
+            "pipe": {
+              "skipTests": true
+            },
+            "service": {
+              "skipTests": true
+            }
+      }}
       },
       "root": "",
       "sourceRoot": "src",
