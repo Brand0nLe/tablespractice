@@ -1,24 +1,35 @@
-import { AppRoutingModule } from './app-routing.module';
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
-import { CoreModule } from './core/core.module';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SchoolsPageComponent } from './views/schools-page/schools-page.component';
-import { HomePageComponent } from './views/home-page/home-page.component';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+
+// Import custom modules
+import { SharedModule } from './shared/shared.module';
+import { CoreModule } from './core/core.module';
+import { ViewsModule } from './views/views.module';
+
+// Import Angular Material modules
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SchoolsPageComponent,
-    HomePageComponent
   ],
   imports: [
-    AppRoutingModule,
     BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+
+    //Custom modules
+    SharedModule,
     CoreModule,
-    BrowserAnimationsModule
+    ViewsModule,
+
+    //Angular Material modules
+    MatToolbarModule,
+    MatTabsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

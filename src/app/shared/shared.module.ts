@@ -16,7 +16,7 @@ import { TableComponent } from './components/table/table.component';
     MatTableModule,
     MatPaginatorModule,
     MatButtonModule,
-    MatIconModule   // <-- And this
+    MatIconModule 
   ],
   exports: [
     TableComponent
