@@ -1,23 +1,19 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
 import { AppComponent } from './app.component';
+import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SchoolsTableComponent } from './core/schools-table/schools-table.component';
-import { BrandonComponent } from './core/brandon/brandon.component';
-import { CuongComponent } from './cuong/cuong.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SchoolsTableComponent,
-    BrandonComponent,
-    CuongComponent
+    AppComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
+    CoreModule,
     BrowserAnimationsModule
   ],
   providers: [],

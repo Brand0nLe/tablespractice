@@ -1,0 +1,31 @@
+<table mat-table [dataSource]="tableData.dataRows" class="w-full">
+    <!-- Define columns -->
+    <ng-container *ngFor="let col of tableData.headerRow; index as i">
+      <th mat-header-cell *matHeaderCellDef> {{col}} </th>
+      <td mat-cell *matCellDef="let element"> {{element[i]}} </td>
+    </ng-container>
+  
+    <!-- Header and row declaration -->
+    <tr mat-header-row *matHeaderRowDef="tableData.headerRow"></tr>
+    <tr mat-row *matRowDef="let row; columns: tableData.headerRow;">
+      <!-- Add button column here -->
+      <td>
+        <button mat-icon-button>
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </tr>
+  </table>
+  
+  <!-- Pagination -->
+  <div class="flex justify-between items-center mt-4">
+    <p>Page 1 of 10</p> <!-- Replace this with actual logic -->
+    <div>
+      <button mat-button>Previous</button>
+      <button mat-button>Next</button>
+    </div>
+  </div>
+  
